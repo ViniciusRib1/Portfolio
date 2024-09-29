@@ -1,0 +1,399 @@
+@import url('https://fonts.google.com/specimen/Inconsolata?preview.size=85');
+
+body {
+    margin: 0px;
+    background: rgb(25,25,25);
+    background: linear-gradient(90deg, rgba(25,25,25,1) 0%, rgba(70,70,70,1) 33%, rgba(32,32,32,1) 81%, rgba(43,43,43,1) 100%);
+    width: 100%;
+    font-family: 'Roboto Slab', serif;
+    transition: ease 2ms;
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background: rgb(25,25,25);
+    background: linear-gradient(90deg, rgba(25,25,25,1) 0%, rgba(29,29,29,1) 33%, rgba(27,27,27,1) 81%, rgba(43,43,43,1) 100%);
+    display: flex;
+    align-items: center;
+    text-align: right;
+    transition: ease 2ms;
+    position: absolute;
+    top: 0;
+    text-shadow: black 2px 2px  40px;
+}
+
+.logo {
+    display: flex;
+    width: 100%;
+    margin: 5%;
+    align-items: center;
+    transition: ease 1s;
+    text-shadow: black 2px 2px  40px;
+}
+.logo a {
+    margin: 2%;
+    color: rgb(255, 255, 255);
+    transition: ease 1s;
+    text-shadow: black 2px 2px  40px;
+}
+
+
+.links {
+    margin-right: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end; /* Alinha os links à direita */
+    transition: ease 2s;
+}
+
+.links a {
+    
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: border-bottom 0.3s ease-in-out, color 0.3s ease-in-out;
+    padding: 5%;
+    display: flex; /* Garante que ícones e texto fiquem na mesma linha */
+    align-items: center;
+    transition: ease 2s;
+    text-shadow: black 4px 4px 40px;
+}
+
+.links a:hover {
+    border-bottom: 2px solid white;
+}
+.select {
+    border-bottom: 2px solid white;
+}
+
+
+.menulat {
+    display: none; 
+    flex-direction: column;
+    width: 20%;
+    height: 100vh;
+    background: rgb(25,25,25);
+    background: linear-gradient(90deg, rgba(25,25,25,1) 0%, rgba(29,29,29,1) 33%, rgba(27,27,27,1) 81%, rgba(43,43,43,1) 100%);
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    transition: ease 2s;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.items a {
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.items a:hover {
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-bottom: 2px solid white;
+}
+
+.items a ion-icon {
+    margin-right: 10%;
+}
+.show-menu {
+    display: flex ;
+}
+.sobre {
+    text-align: center;
+}
+.sobre h1 {
+    border-bottom: 2px solid white;
+    padding: 10px;
+}
+#setaprabaixokk {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 250%;
+    transition: all 2s;
+    text-align: center;
+    margin: auto;
+}
+#setaparcimakk {
+    color: white;
+    font-size: 250%;
+    transition: ease 4s;
+    text-align: center;
+}
+.pecas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(32, 32, 32);
+    width: 40%;
+    border-left: solid 4px rgb(255, 255, 255);
+    padding: 20px;
+    box-sizing: border-box;
+    margin: auto;
+    box-shadow: black 1px 1px 20px;
+}
+
+.pecas p {
+    text-align: left;
+    color: white; /* Apenas para melhor visualização */
+    width: 100%; /* Garante que os parágrafos ocupem toda a largura do contêiner */
+    margin: 5px 0; /* Adiciona uma pequena margem entre os parágrafos */
+    transition: all 2s;
+}
+
+footer {
+    width: 100%;
+    height: 100px; /* altura definida para o rodapé */
+    background: rgb(25,25,25);
+    background: linear-gradient(90deg, rgba(25,25,25,1) 0%, rgba(29,29,29,1) 33%, rgba(27,27,27,1) 81%, rgba(43,43,43,1) 100%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 200%;
+    transition: all 2s;
+}
+
+footer h1 {
+    margin: 0;
+    color: white;
+}
+#footer {
+    transition: all 2s;
+}
+.modepage  {
+    padding: 1%;
+    color: white;
+    margin-right: 2%;
+    cursor: pointer;
+    transition: ease 2ms;
+}
+#perfil {
+    width: 200px;
+    height: 200px;
+    border: solid rgb(255, 255, 255) 2px;
+    border-radius: 200%;
+}
+.contato {
+    padding: 5%;
+}
+.contato a {
+    color: white;
+    padding: 2%;
+    margin: 5%;
+    border: solid white 2px;
+    box-shadow: black 2px 2px 10px;
+    align-items: center;
+    font-size: 40px;
+    transition: all 1s;
+}
+.contato a:hover {
+    color: white;
+    padding: 5%;
+    margin: 5%;
+    border: solid white 2px;
+    box-shadow: black 2px 2px 20px;
+    align-items: center;
+    font-size: 80px;
+    transition: all 1s;
+    text-decoration: underline;
+}
+.item-cont {
+    padding: 0%;
+}
+.contato a {
+    color: white;
+    border: 2px white solid;
+}
+.lingsimg {
+    width: 200px;
+    height: 200px;
+    padding: 5%;
+}
+@media (max-width: 1400px) {
+    .links  {
+        justify-content: center;
+    }
+    .logo h1 {
+        color: rgb(255, 255, 255);
+        transition: ease 2ms;
+        width: 50px;
+    }
+    .modepage  {
+        color: white;
+        cursor: pointer;
+        transition: ease 2ms;
+    }
+    .menulat {
+        display: none;
+        flex-direction: column;
+        width: 40%;
+        height: 100vh; /* Preenche a altura total da viewport */
+        background: rgb(25,25,25);
+        background: linear-gradient(90deg, rgba(25,25,25,1) 0%, rgba(29,29,29,1) 33%, rgba(27,27,27,1) 81%, rgba(43,43,43,1) 100%);
+        position: fixed; /* Fixa o menu na tela */
+        top: 0;
+        left: 0;
+        z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+        transition: ease 2s;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .items {
+        display: flex;
+        flex-direction: column; /* Para que os links fiquem na vertical */
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        top: 0px;
+    }
+    
+    .items a {
+        display: flex;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 80%;
+        margin-right: 30%;
+        text-align: center;
+    }
+    .items a ion-icon {
+        margin-right: 50px;
+    }
+    .sobre {
+        text-align: center;
+    }
+    footer {
+        width: 100%;
+        height: 150px; /* altura definida para o rodapé */
+        background: rgb(25,25,25);
+        background: linear-gradient(90deg, rgba(25,25,25,1) 0%, rgba(29,29,29,1) 33%, rgba(27,27,27,1) 81%, rgba(43,43,43,1) 100%);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 800%;
+    }
+    
+    footer h1 {
+        margin: 0;
+        color: white;
+    }
+    
+}
+@media (max-width: 800px) {
+    .links {
+        display: none;
+    }
+    .menulat {
+        display: none;
+        flex-direction: column;
+        width: 40%;
+        height: 100%; /* Preenche a altura total da viewport */
+        background: rgb(25,25,25);
+        background: linear-gradient(90deg, rgba(25,25,25,1) 0%, rgba(29,29,29,1) 33%, rgba(27,27,27,1) 81%, rgba(43,43,43,1) 100%);
+        position: fixed; /* Fixa o menu na tela */
+        top: 0;
+        left: 0;
+        z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+        transition: ease 2ms;
+    }
+    .modepage  {
+        color: white;
+        cursor: pointer;
+        transition: ease 2ms;
+    }
+    
+    .items {
+        display: flex;
+        flex-direction: column; /* Para que os links fiquem na vertical */
+    }
+    
+    .items a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 80%;
+    }
+    .items a ion-icon {
+        margin-right: 10%;
+    }
+    .sobre {
+        text-align: center;
+    }
+    .sobre a {
+        color: white;
+
+    }
+    footer {
+        width: 100%;
+        height: 150px; /* altura definida para o rodapé */
+        background: rgb(25,25,25);
+        background: linear-gradient(90deg, rgba(25,25,25,1) 0%, rgba(29,29,29,1) 33%, rgba(27,27,27,1) 81%, rgba(43,43,43,1) 100%);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 800%;
+    }
+    
+    footer h1 {
+        margin: 0;
+        color: white;
+    }
+    .contato {
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+    
+    .contato a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border: solid white 2px;
+        box-shadow: black 2px 2px 10px;
+        font-size: 40px;
+        transition: all 1s;
+        width: auto;
+        padding: 15%; 
+        text-decoration: none; 
+    }
+    
+    .contato a:hover {
+        color: white;
+        padding: 10%; /* Reduz o padding ao passar o mouse */
+        border: solid white 2px;
+        box-shadow: black 2px 2px 10px;
+        font-size: 100px;
+        transition: all 1s;
+        text-decoration: underline;
+        width: auto;
+    }
+}

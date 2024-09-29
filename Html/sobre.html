@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio / Sobre</title>
+    <link rel="stylesheet" href="/Css/Dark.css" id="theme-link">
+</head>
+<body>
+    <header id="header">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <div class="menulat"></div>
+        <div class="logo" id="logo">
+            <a href="#" onclick="abrir()" id="menua"><ion-icon name="menu"></ion-icon></a>
+            <a href="#" onclick="fechar()" style="display: none;" id="closeinmenuitens"><ion-icon name="close"></ion-icon></a>
+            <h1>Portfólio</h1>
+        </div>
+        <div class="links" id="links">
+            <a href="/Html/index.html"><ion-icon name="home"></ion-icon> Início</a>
+            <a href="/Html/sobre.html" class="select"><ion-icon name="help"></ion-icon> Sobre</a>
+            <a href="/Html/contato.html"><ion-icon name="call"></ion-icon> Contato</a>
+            <a href="/Html/projetos.html"><ion-icon name="code-working"></ion-icon> Projetos</a>
+            <a href="/Html/comissoes.html"><ion-icon name="hammer"></ion-icon> Comissões</a>
+        </div>
+        <p class="modepage" onclick="togglemode()" id="modepage"><ion-icon name="sunny"></ion-icon></p>
+        <p class="modepage" onclick="togglemode()" id="modepage2" style="display: none;"><ion-icon name="moon"></ion-icon></p>
+    </header> <br> <br>
+    <div class="menulat" id="menulat">
+        <div class="items">
+            <a href="#" onclick="fechar()" id="closeinmenuitens"><ion-icon name="close"></ion-icon> Fechar</a>
+            <a href="/Html/index.html"><ion-icon name="home"></ion-icon> Início</a>
+            <a href="/Html/sobre.html" class="select"><ion-icon name="help"></ion-icon> Sobre</a>
+            <a href="/Html/contato.html"><ion-icon name="call"></ion-icon> Contato</a>
+            <a href="/Html/projetos.html"><ion-icon name="code-working"></ion-icon> Projetos</a>
+            <a href="/Html/comissoes.html"><ion-icon name="hammer"></ion-icon> Comissões</a>
+        </div>
+    </div>
+    <div class="sobre">
+        <h1>❓ Sobre</h1> 
+        <p id="sobre"></p>
+        <p>Atualmente, eu estou mais estudando a linguagem Java, mas eu também sei um pouco de outras linguagens.</p>   
+        <div class="setup">
+            <h2>Meu setup:</h2>
+            <p>Atualmente meu computador contém:</p>
+            <div class="pecas">
+                <p>Processador: Intel(R) Xeon(R) CPU E5-2640 v3 @ 2.60GHz   2.60 GHz;</p>
+                <p>Ram: 32,0 GB;</p>
+                <p>Placa de vídeo: Rtx 2070.</p>
+            </div>
+            <br>
+            <h2>As linguagens que eu uso:</h2>
+            <div class="lings">
+                <img src="/img/java_logo_640.jpg" alt="" class="lingsimg">
+                <img src="/img/Python-logo-notext.svg.png" alt=""class="lingsimg">
+                <img src="/img/JavaScript-logo.png" alt=""class="lingsimg">
+            </div>
+            <img src="/img/Confused_1.gif" alt="" id="perfil">
+            <p>Imagem feita por Vinicius Ribeiro.</p>
+        </div>
+        <a href="#setaparcimakk" id="setaprabaixokk"><ion-icon name="arrow-down"></ion-icon></a>
+    </div>
+    <footer id="footer">
+        <a href="#header" id="setaparcimakk"><ion-icon name="arrow-up"></ion-icon></a>
+        <h1>Criado por Vinicius Ribeiro.</h1>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/Js/script.js"></script>
+</body>
+</html>
