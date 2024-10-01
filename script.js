@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     if (savedTheme) {
         themeLink.setAttribute("href", savedTheme);
-        if (savedTheme === "/Css/Light.css") {
+        if (savedTheme === "Light.css") {
             icon1.style.display = "none";
             icon2.style.display = "block";
         } else {
@@ -40,8 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function togglemode() {
     const themeLink = document.getElementById("theme-link");
-    const darkTheme = "/Css/Dark.css";
-    const lightTheme = "/Css/Light.css";
+    const darkTheme = "Dark.css";
+    const lightTheme = "Light.css";
     const icon1 = document.getElementById("modepage");
     const icon2 = document.getElementById("modepage2");
     
