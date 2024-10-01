@@ -6,7 +6,6 @@ body {
     background: linear-gradient(90deg, rgba(25,25,25,1) 0%, rgba(70,70,70,1) 33%, rgba(32,32,32,1) 81%, rgba(43,43,43,1) 100%);
     width: 100%;
     font-family: 'Roboto Slab', serif;
-    transition: ease 2ms;
     color: white;
 }
 
@@ -18,7 +17,6 @@ header {
     display: flex;
     align-items: center;
     text-align: right;
-    transition: ease 2ms;
     position: absolute;
     top: 0;
     text-shadow: black 2px 2px  40px;
@@ -29,13 +27,11 @@ header {
     width: 100%;
     margin: 5%;
     align-items: center;
-    transition: ease 1s;
     text-shadow: black 2px 2px  40px;
 }
 .logo a {
     margin: 2%;
     color: rgb(255, 255, 255);
-    transition: ease 1s;
     text-shadow: black 2px 2px  40px;
 }
 
@@ -45,7 +41,6 @@ header {
     display: flex;
     flex-direction: row;
     align-items: flex-end; /* Alinha os links à direita */
-    transition: ease 2s;
 }
 
 .links a {
@@ -56,7 +51,6 @@ header {
     padding: 5%;
     display: flex; /* Garante que ícones e texto fiquem na mesma linha */
     align-items: center;
-    transition: ease 2s;
     text-shadow: black 4px 4px 40px;
 }
 
