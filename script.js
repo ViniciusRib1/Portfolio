@@ -82,3 +82,45 @@ function calcIdade() {
     
 }
 calcIdade();
+
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.slide');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let currentSlide = 0;
+
+    // Função para atualizar os slides
+    function updateSlides() {
+        slides.forEach((slide, index) => {
+            // Adiciona a classe 'slideactive' ao slide atual e remove dos outros
+            if (index === currentSlide) {
+                slide.classList.add('slideactive');
+                slide.classList.remove('slide');
+            } else {
+                slide.classList.remove('slideactive');
+                slide.classList.add('slide');
+            }
+        });
+    }
+
+    // Evento para o botão "Próximo"
+    nextBtn.addEventListener('click', () => {
+        currentSlide++;
+        if (currentSlide >= slides.length) {
+            currentSlide = 0; // Retorna ao primeiro slide
+        }
+        updateSlides();
+    });
+
+    // Evento para o botão "Anterior"
+    prevBtn.addEventListener('click', () => {
+        currentSlide--;
+        if (currentSlide < 0) {
+            currentSlide = slides.length - 1; // Vai para o último slide
+        }
+        updateSlides();
+    });
+
+    // Chama a função inicialmente para exibir o slide correto
+    updateSlides();
+});

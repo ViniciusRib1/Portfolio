@@ -37,12 +37,52 @@
         </div>
     </div>
     <div class="sobre">
-        <h1>🔨 Projetos</h1> 
-        <a href="#setaparcimakk" id="setaprabaixokk"><ion-icon name="arrow-down"></ion-icon></a>
+        <h1>🔨 Projetos</h1>
+        <div class="projeto">
+            <!-- Botão Anterior -->
+            <button class="arrow arrow-left" id="prevBtn">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </button>
+    
+    
+            <!-- Primeiro Slide -->
+            <div class="slideactive">
+                <h1 id="titulo">
+                    Salvador de Contas em Java
+                </h1>
+                <img src="salvadorDecontasemJava.png" alt="Projeto Salvador de Contas" class="imgprojeto">
+                <p>Esse é um mini projeto de treinamento em Java sobre salvar contas em um mini bloco de notas.<br>
+                Disponível em: <a href="https://github.com/ViniciusRib1/Salvador-de-Contas">GitHub</a></p>
+            </div>
+    
+            <!-- Segundo Slide -->
+            <div class="slide">
+                <h1 id="titulo">
+                    Cálculo de Juros Simples e Composto
+                </h1>
+                <img src="calculodejuros.png" alt="Cálculo de Juros" class="imgprojeto">
+                <p>Um projeto criado para facilitar o cálculo de juros compostos usando JavaScript.<br>
+                Disponível em: <a href="https://viniciusrib1.github.io/Calculo-de-Juros/">GitHub</a></p>
+            </div>
+    
+            <!-- Terceiro Slide -->
+            <div class="slide">
+                <h1 id="titulo">
+                    Um leitor de Manga (Privado)
+                </h1>
+                <img src="leitordemanga.png" alt="Leitor de Manga" class="imgprojeto">
+                <p>Uma plataforma de manga criada em um curso de TI que fiz, já finalizada, mas está privada.</p>
+            </div>
+    
+            <!-- Botão Próximo -->
+            <button class="arrow arrow-right" id="nextBtn">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </button>
     </div>
+    <a href="#setaparcimakk" id="setaprabaixokk"><ion-icon name="arrow-down"></ion-icon></a>
     <footer id="footer">
         <a href="#header" id="setaparcimakk"><ion-icon name="arrow-up"></ion-icon></a>
-        <h1>Criado por Venem.</h1>
+        <h1>Criado por Vinicius Ribeiro.</h1>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

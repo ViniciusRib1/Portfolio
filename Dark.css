@@ -223,6 +223,74 @@ footer h1 {
     height: 200px;
     padding: 5%;
 }
+.imgprojeto {
+    width: 1400px;
+    height: 1000px;
+    margin: auto;
+}
+.projeto {
+    display: flex;
+}
+.projetos {
+    display: flex;
+    flex-direction: column;
+}
+.slideactive {
+    display: flex;
+    flex-direction: column;    
+}
+.slideshow-container {
+    position: relative;
+    max-width: 800px; /* Ajuste conforme necessário */
+    margin: auto;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+h1#titulo {
+    border-bottom: none;
+    border: none;
+}
+button {
+    display: flex;
+    color: aliceblue;
+    font-size: 50px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    width: 50px;
+    height: 100px;
+    border-radius: 10px;
+    transition: 1s;
+    border: white 2px solid;
+}
+button:hover {
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    width: 50px;
+    height: 100px;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.slide {
+    display: none; /* Oculta todos os slides por padrão */
+    padding: 20px;
+    text-align: center;
+}
+.slide.active {
+    display: block; /* Mostra o slide ativo */
+}
+
+
 @media (max-width: 1400px) {
     .links  {
         justify-content: center;
