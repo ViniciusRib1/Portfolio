@@ -83,44 +83,46 @@ function calcIdade() {
 }
 calcIdade();
 
-document.addEventListener('DOMContentLoaded', () => {
-    const slides = document.querySelectorAll('.slide');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    let currentSlide = 0;
+// Seleciona todos os slides e os botões de navegação
+const slides = document.querySelectorAll('.projeto .slide, .projeto .slideactive');
+const nextBtn = document.getElementById('nextBtn');
+const prevBtn = document.getElementById('prevBtn');
+let currentSlide = 0;  // Mantém o índice do slide atual
 
-    // Função para atualizar os slides
-    function updateSlides() {
-        slides.forEach((slide, index) => {
-            // Adiciona a classe 'slideactive' ao slide atual e remove dos outros
-            if (index === currentSlide) {
-                slide.classList.add('slideactive');
-                slide.classList.remove('slide');
-            } else {
-                slide.classList.remove('slideactive');
-                slide.classList.add('slide');
-            }
-        });
+// Função para atualizar a exibição dos slides
+function updateSlides() {
+    slides.forEach((slide, index) => {
+        if (index === currentSlide) {
+            slide.classList.add('slideactive'); // Exibe o slide atual
+            slide.classList.remove('slide'); // Remove a classe 'slide' para que ele apareça
+        } else {
+            slide.classList.add('slide'); // Adiciona a classe 'slide' para ocultá-los
+            slide.classList.remove('slideactive'); // Remove a classe 'slideactive' dos outros
+        }
+    });
+}
+
+// Evento para o botão "Próximo"
+nextBtn.addEventListener('click', () => {
+    currentSlide++;
+    if (currentSlide >= slides.length) {
+        currentSlide = 0; // Volta ao primeiro slide se ultrapassar o último
     }
-
-    // Evento para o botão "Próximo"
-    nextBtn.addEventListener('click', () => {
-        currentSlide++;
-        if (currentSlide >= slides.length) {
-            currentSlide = 0; // Retorna ao primeiro slide
-        }
-        updateSlides();
-    });
-
-    // Evento para o botão "Anterior"
-    prevBtn.addEventListener('click', () => {
-        currentSlide--;
-        if (currentSlide < 0) {
-            currentSlide = slides.length - 1; // Vai para o último slide
-        }
-        updateSlides();
-    });
-
-    // Chama a função inicialmente para exibir o slide correto
     updateSlides();
 });
+
+// Evento para o botão "Anterior"
+prevBtn.addEventListener('click', () => {
+    currentSlide--;
+    if (currentSlide < 0) {
+        currentSlide = slides.length - 1; // Vai para o último slide se voltar além do primeiro
+    }
+    updateSlides();
+});
+
+// Inicializa a exibição do primeiro slide
+updateSlides();
+
+
+
+

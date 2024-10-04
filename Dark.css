@@ -224,8 +224,8 @@ footer h1 {
     padding: 5%;
 }
 .imgprojeto {
-    width: 1400px;
-    height: 1000px;
+    width: 80%;
+    height: 90%;
     margin: auto;
 }
 .projeto {
@@ -238,6 +238,9 @@ footer h1 {
 .slideactive {
     display: flex;
     flex-direction: column;    
+}
+.slide {
+    display: none;
 }
 .slideshow-container {
     position: relative;
@@ -263,7 +266,7 @@ button {
     width: 50px;
     height: 100px;
     border-radius: 10px;
-    transition: 1s;
+    transition: 0.5s;
     border: white 2px solid;
 }
 button:hover {
@@ -277,7 +280,7 @@ button:hover {
     width: 50px;
     height: 100px;
     border-radius: 10px;
-    transition: 1s;
+    transition: 0.5s;
     cursor: pointer;
 }
 

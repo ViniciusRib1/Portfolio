@@ -227,6 +227,7 @@ footer h1 {
 @media (max-width: 1400px) {
     .links  {
         justify-content: center;
+        color: black;
     }
     .logo h1 {
         color: black;
@@ -296,6 +297,75 @@ footer h1 {
     footer h1 {
         margin: 0;
         color: black;
+    }
+    .imgprojeto {
+        width: 80%;
+        height: 90%;
+        margin: auto;
+    }
+    .projeto {
+        display: flex;
+    }
+    .projetos {
+        display: flex;
+        flex-direction: column;
+    }
+    .slideactive {
+        display: flex;
+        flex-direction: column;    
+    }
+    .slide {
+        display: none;
+    }
+    .slideshow-container {
+        position: relative;
+        max-width: 800px; /* Ajuste conforme necessário */
+        margin: auto;
+        overflow: hidden;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    h1#titulo {
+        border-bottom: none;
+        border: none;
+    }
+    button {
+        display: flex;
+        color: aliceblue;
+        font-size: 50px;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(14, 14, 14);
+        width: 50px;
+        height: 100px;
+        border-radius: 10px;
+        transition: 0.5s;
+        border: rgb(0, 0, 0) 2px solid;
+    }
+    button:hover {
+        display: flex;
+        color: rgb(255, 255, 255);
+        font-size: 50px;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+        width: 50px;
+        height: 100px;
+        border-radius: 10px;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    
+    .slide {
+        display: none; /* Oculta todos os slides por padrão */
+        padding: 20px;
+        text-align: center;
+    }
+    .slide.active {
+        display: block; /* Mostra o slide ativo */
     }
     
 }
@@ -379,8 +449,8 @@ footer h1 {
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white;
-        border: solid white 2px;
+        color: rgb(0, 0, 0);
+        border: solid rgb(0, 0, 0) 2px;
         box-shadow: black 2px 2px 10px;
         font-size: 40px;
         transition: all 1s;
@@ -390,9 +460,9 @@ footer h1 {
     }
     
     .contato a:hover {
-        color: white;
+        color: rgb(0, 0, 0);
         padding: 10%; /* Reduz o padding ao passar o mouse */
-        border: solid white 2px;
+        border: solid rgb(0, 0, 0) 2px;
         box-shadow: black 2px 2px 10px;
         font-size: 100px;
         transition: all 1s;
