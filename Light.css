@@ -116,7 +116,7 @@ header {
     border-bottom: 2px solid rgb(0, 0, 0);
     padding: 10px;
 }
-#setaprabaixokk {
+#setaprabaixo {
     display: flex;
     justify-content: center;
     color: rgb(0, 0, 0);
@@ -125,7 +125,7 @@ header {
     text-align: center;
     margin: auto;
 }
-#setaparcimakk {
+#setaparcima {
     color: black;
     font-size: 250%;
     transition: ease 4s;
