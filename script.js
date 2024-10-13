@@ -77,7 +77,7 @@ function calcIdade() {
         sobre.innerHTML = `Olá! Me chamo Vinicius, atualmente eu tenho ${idade} anos, eu sou um programador que adora estudar novas tecnologias `;
     } else {
         idade = anoAtual - anoNascimento;
-        sobre.innerHTML = `Olá! Me chamo Vinicius, mas pode me chamar de Venem, atualmente eu tenho ${idade} anos, eu sou um programador que adora estudar novas tecnologias`;
+        sobre.innerHTML = `Olá! Me chamo Vinicius, atualmente eu tenho ${idade} anos, eu sou um programador que adora estudar novas tecnologias`;
     }
     
 }
