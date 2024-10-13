@@ -1,19 +1,18 @@
-@import url('https://fonts.google.com/specimen/Nunito?preview.size=72');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 body {
     margin: 0px;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(100deg, rgba(255, 255, 255, 1) 0%, rgba(212, 210, 210, 1) 33%, rgba(213, 212, 212, 1) 81%, rgba(198, 201, 201, 1) 100%);
+    background-color: #d5d4d4;
     width: 100%;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Poppins';
     color: rgb(0, 0, 0);
 }
 
 header {
     width: 100%;
-    height: 50px;
-    background: rgb(210,210,210);
-    background: linear-gradient(90deg, rgba(210,210,210,1) 0%, rgba(255,254,254,1) 33%, rgba(221,221,221,1) 81%, rgba(182,182,182,1) 100%);
+    height: 60px;
+    background-color: white;
     display: flex;
     align-items: center;
     text-align: right;
@@ -28,12 +27,10 @@ header {
     width: 100%;
     margin: 5%;
     align-items: center;
-    text-shadow: black 2px 2px  40px;
 }
 .logo a {
     margin: 2%;
     color: rgb(0, 0, 0);
-    text-shadow: black 2px 2px  40px;
 }
 
 
@@ -68,8 +65,7 @@ header {
     flex-direction: column;
     width: 20%;
     height: 100vh;
-    background: rgb(210,210,210);
- background: linear-gradient(90deg, rgba(210,210,210,1) 0%, rgba(255,254,254,1) 33%, rgba(221,221,221,1) 81%, rgba(182,182,182,1) 100%);
+    background: white;
     position: fixed; 
     top: 0;
     left: 0;
@@ -155,9 +151,8 @@ header {
 
 footer {
     width: 100%;
-    height: 100px; /* altura definida para o rodapé */
-    background: rgb(210,210,210);
-    background: linear-gradient(90deg, rgba(210,210,210,1) 0%, rgba(255,254,254,1) 33%, rgba(221,221,221,1) 81%, rgba(182,182,182,1) 100%);
+    height: 120px; /* altura definida para o rodapé */
+    background-color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -216,7 +211,6 @@ footer h1 {
     padding: 0%;
 }
 .contato a {
-    color: rgb(0, 0, 0);
     border: 2px black solid;
 }
 .lingsimg {
@@ -304,8 +298,7 @@ footer h1 {
         flex-direction: column;
         width: 40%;
         height: 100vh; /* Preenche a altura total da viewport */
-        background: rgb(210,210,210);
-        background: linear-gradient(90deg, rgba(210,210,210,1) 0%, rgba(255,254,254,1) 33%, rgba(221,221,221,1) 81%, rgba(182,182,182,1) 100%);
+        background-color: white;
         position: fixed; /* Fixa o menu na tela */
         top: 0;
         left: 0;
@@ -345,7 +338,7 @@ footer h1 {
         width: 100%;
         height: 150px; /* altura definida para o rodapé */
         background: rgb(210,210,210);
-        background: linear-gradient(90deg, rgba(210,210,210,1) 0%, rgba(255,254,254,1) 33%, rgba(221,221,221,1) 81%, rgba(182,182,182,1) 100%);
+
         text-align: center;
         display: flex;
         justify-content: center;
@@ -426,16 +419,16 @@ footer h1 {
     .menulat {
         display: none;
         flex-direction: column;
-        width: 40%;
-        height: 100%; /* Preenche a altura total da viewport */
-        background: rgb(210,210,210);
-        background: linear-gradient(90deg, rgba(210,210,210,1) 0%, rgba(255,254,254,1) 33%, rgba(221,221,221,1) 81%, rgba(182,182,182,1) 100%);
+        width: 50%;
+        height: 120%; /* Preenche a altura total da viewport */
+        background: white;
         position: fixed; /* Fixa o menu na tela */
         top: 0;
         left: 0;
         z-index: 1000; /* Garante que o menu fique acima de outros elementos */
         transition: ease 2ms;
         color: black;
+        font-size: 10px;
     }
     .links h1 {
         color: black;
@@ -473,9 +466,8 @@ footer h1 {
     footer {
         width: 100%;
         height: 150px; /* altura definida para o rodapé */
-        background: rgb(210,210,210);
-        background: linear-gradient(90deg, rgba(210,210,210,1) 0%, rgba(255,254,254,1) 33%, rgba(221,221,221,1) 81%, rgba(182,182,182,1) 100%);
         text-align: center;
+        background: white;
         display: flex;
         justify-content: center;
         align-items: center;
