@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio / Projetos</title>
     <link rel="stylesheet" href="Dark.css" id="theme-link">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
 </head>
 <body>
     <header id="header">
@@ -38,45 +39,34 @@
     </div>
     <div class="sobre">
         <h1>🔨 Projetos</h1>
-        <div class="projeto">
-            <button class="arrow arrow-left" id="prevBtn">
-                <ion-icon name="chevron-back-outline"></ion-icon>
-            </button>
+
+        <div class="container-slider">
+          <button id="prev-button" onclick="btnPrev()">&#10094;</button>
+          <div class="container-images">
+              <div class="slider active" id="slide1">
+                  <h1 class="tip">Leitor de Manga</h1>
+                  <img src="leitordemanga.png" alt="Leitor de Manga">
+                  <p class="desc">Um leitor de manga desenvolvido para um curso de TI (privado)</p>
+              </div>
+      
+              <div class="slider" id="slide2">
+                  <h1 class="tip">Salvador de contas em Java</h1>
+                  <img src="salvadorDecontasemJava.png" alt="Salvador de Contas">
+                  <p class="desc">Um projeto simples feito para treino, disponível em: 
+                      <a href="https://github.com/ViniciusRib1/Salvador-de-Contas" target="_blank">GitHub</a></p>
+              </div>
+      
+              <div class="slider" id="slide3">
+                  <h1 class="tip">Cálculo de Juros Simples e Composto</h1>
+                  <img src="calculodejuros.png" alt="Cálculo de Juros">
+                  <p class="desc">Um projeto para calcular o juros composto, disponível para teste em: 
+                      <a href="https://viniciusrib1.github.io/Calculo-de-Juros/" target="_blank">GitHub Pages</a></p>
+              </div>
+          </div>
+          <button id="next-button" onclick="btnNext()">&#10095;</button>
+      </div>
+          
         
-            <div class=" slideactive"> <!-- O primeiro slide começa ativo -->
-                <h1 id="titulo">
-                    Salvador de Contas em Java
-                </h1>
-                <img src="salvadorDecontasemJava.png" alt="Projeto Salvador de Contas" class="imgprojeto">
-                <p>Esse é um mini projeto de treinamento em Java sobre salvar contas em um mini bloco de notas.<br>
-                    Disponível em: <a href="https://github.com/ViniciusRib1/Salvador-de-Contas">GitHub</a>
-                </p>
-            </div>
-        
-            <!-- Segundo Slide -->
-            <div class="slide">
-                <h1 id="titulo">
-                    Cálculo de Juros Simples e Composto
-                </h1>
-                <img src="calculodejuros.png" alt="Cálculo de Juros" class="imgprojeto">
-                <p>Um projeto criado para facilitar o cálculo de juros compostos usando JavaScript.<br>
-                    Disponível em: <a href="https://viniciusrib1.github.io/Calculo-de-Juros/">GitHub</a>
-                </p>
-            </div>
-        
-            <!-- Terceiro Slide -->
-            <div class="slide">
-                <h1 id="titulo">
-                    Um leitor de Manga (Privado)
-                </h1>
-                <img src="leitordemanga.png" alt="Leitor de Manga" class="imgprojeto">
-                <p>Uma plataforma de manga criada em um curso de TI que fiz, já finalizada, mas está privada.</p>
-            </div>
-        
-            <button class="arrow arrow-right" id="nextBtn">
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-            </button>
-        </div>
         
         
     <a href="#setaparcimakk" id="setaprabaixokk"><ion-icon name="arrow-down"></ion-icon></a>

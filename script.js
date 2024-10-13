@@ -83,46 +83,34 @@ function calcIdade() {
 }
 calcIdade();
 
-// Seleciona todos os slides e os botões de navegação
-const slides = document.querySelectorAll('.projeto .slide, .projeto .slideactive');
-const nextBtn = document.getElementById('nextBtn');
-const prevBtn = document.getElementById('prevBtn');
-let currentSlide = 0;  // Mantém o índice do slide atual
+function btnNext() {
+    const activeSlide = document.querySelector('.slider.active');
+    let nextSlide = activeSlide.nextElementSibling;
 
-// Função para atualizar a exibição dos slides
-function updateSlides() {
-    slides.forEach((slide, index) => {
-        if (index === currentSlide) {
-            slide.classList.add('slideactive'); // Exibe o slide atual
-            slide.classList.remove('slide'); // Remove a classe 'slide' para que ele apareça
-        } else {
-            slide.classList.add('slide'); // Adiciona a classe 'slide' para ocultá-los
-            slide.classList.remove('slideactive'); // Remove a classe 'slideactive' dos outros
-        }
-    });
+    // Se não houver mais slides, volta para o primeiro
+    if (!nextSlide || !nextSlide.classList.contains('slider')) {
+        nextSlide = document.getElementById('slide1');
+    }
+
+    // Troca a classe active
+    activeSlide.classList.remove('active');
+    nextSlide.classList.add('active');
 }
 
-// Evento para o botão "Próximo"
-nextBtn.addEventListener('click', () => {
-    currentSlide++;
-    if (currentSlide >= slides.length) {
-        currentSlide = 0; // Volta ao primeiro slide se ultrapassar o último
+function btnPrev() {
+    const activeSlide = document.querySelector('.slider.active');
+    let prevSlide = activeSlide.previousElementSibling;
+
+    // Se não houver slides anteriores, volta para o último
+    if (!prevSlide || !prevSlide.classList.contains('slider')) {
+        prevSlide = document.getElementById('slide3');
     }
-    updateSlides();
-});
 
-// Evento para o botão "Anterior"
-prevBtn.addEventListener('click', () => {
-    currentSlide--;
-    if (currentSlide < 0) {
-        currentSlide = slides.length - 1; // Vai para o último slide se voltar além do primeiro
-    }
-    updateSlides();
-});
+    // Troca a classe active
+    activeSlide.classList.remove('active');
+    prevSlide.classList.add('active');
+}
 
-// Inicializa a exibição do primeiro slide
-updateSlides();
-
-
+  
 
 
