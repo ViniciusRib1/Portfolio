@@ -278,6 +278,9 @@ footer h1 {
   #next-button {
     right: 10px;
   }
+  a {
+    color: black;
+  }
 @media (max-width: 1400px) {
     .links  {
         justify-content: center;
@@ -427,6 +430,7 @@ footer h1 {
   #next-button {
     right: 10px;
   }
+  
 }  
 @media (max-width: 800px) {
     .links {
